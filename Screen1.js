@@ -305,7 +305,8 @@ const Screen1 = () => {
                                 flexDirection: 'row',
                                 alignItems: 'center',
                                 justifyContent: 'space-between',
-                                width: '50%'
+                                width: '50%',
+                                marginTop: 10
                             }}
                         >
                             <Image
@@ -364,7 +365,7 @@ const Screen1 = () => {
                     <View
                         style={{
                             display: 'flex',
-                            justifyContent: 'space-evenly',
+                            justifyContent: 'space-between',
                             alignItems: 'flex-end'
                         }}
                     >
@@ -374,10 +375,12 @@ const Screen1 = () => {
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                // width: '50%',
+                                width: '100%',
                                 borderWidth: 1,
                                 borderColor: '#fff',
-                                borderRadius: 20
+                                borderRadius: 20,
+                                paddingHorizontal: 10,
+                                marginTop: 10
                             }}
                         >
                             <Text style={{ color: '#fff', fontSize: 30 }}>
@@ -493,9 +496,10 @@ const styles = StyleSheet.create({
     },
     myPortfolio: {
         display: 'flex',
+        flex: 1,
         height: '15%',
         width: '85%',
-        paddingHorizontal: 10,
+        padding: 15,
         flexDirection: 'row',
         justifyContent: 'space-between',
         borderWidth: 1,
