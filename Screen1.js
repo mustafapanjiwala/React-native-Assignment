@@ -277,7 +277,19 @@ const Screen1 = () => {
                         <Text style={{ color: '#fff', fontSize: 30 }}>
                             ₹4,001.46
                         </Text>
-                        <Text style={{ color: '#fff' }}> ^ 4.32%</Text>
+                        <View
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'row'
+                                // justifyContent: 'center'
+                                // alignItems: 'center'
+                            }}
+                        >
+                            <AntDesign name="caretup" size={22} color="grey" />
+                            <Text style={{ color: '#fff', marginLeft: 5 }}>
+                                4.32%
+                            </Text>
+                        </View>
                     </View>
                     <View
                         style={{
@@ -328,18 +340,26 @@ const Screen1 = () => {
                         style={{
                             display: 'flex',
                             justifyContent: 'space-evenly'
-
                             // alignItems: 'center'
                         }}
                     >
-                        <View>
-                            <Text style={{ color: '#fff' }}>My Rewards</Text>
+                        <View
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'row'
+                                // justifyContent: 'space-evenly'
+                                // alignItems: 'center'
+                            }}
+                        >
                             <Image source={gift}></Image>
+                            <Text style={{ color: '#fff', marginLeft: 5 }}>
+                                My Rewards
+                            </Text>
                         </View>
                         <Text style={{ color: '#fff', fontSize: 30 }}>
-                            ₹4,001.46
+                            0,016xCoin
                         </Text>
-                        <Text style={{ color: '#fff' }}> ^ 4.32%</Text>
+                        <Text style={{ color: '#fff' }}> ₹210.06</Text>
                     </View>
                     <View
                         style={{
@@ -352,36 +372,20 @@ const Screen1 = () => {
                         <View
                             style={{
                                 display: 'flex',
-                                flexDirection: 'row',
                                 alignItems: 'center',
-                                justifyContent: 'space-between',
-                                width: '50%'
+                                justifyContent: 'center',
+                                // width: '50%',
+                                borderWidth: 1,
+                                borderColor: '#fff',
+                                borderRadius: 20
                             }}
                         >
-                            <Image
-                                source={i1}
-                                style={{
-                                    width: '30%'
-                                }}
-                            ></Image>
-                            <Image
-                                source={i2}
-                                style={{
-                                    width: '30%'
-                                }}
-                            ></Image>
-                            <Image
-                                source={i3}
-                                style={{
-                                    width: '30%'
-                                }}
-                            ></Image>
-                            <Image
-                                source={i4}
-                                style={{
-                                    width: '30%'
-                                }}
-                            ></Image>
+                            <Text style={{ color: '#fff', fontSize: 30 }}>
+                                5%
+                            </Text>
+                            <Text style={{ color: '#fff' }}>
+                                Transaction{'\n'} Cashback
+                            </Text>
                         </View>
                     </View>
                 </View>
@@ -393,11 +397,13 @@ const Screen1 = () => {
 const styles = StyleSheet.create({
     containers: {
         flex: 1,
+        height: '100%',
         justifyContent: 'center',
         // alignItems: 'center',
         // width: '100%',
         // height: '100%',
-        backgroundColor: '#000000'
+        backgroundColor: '#000000',
+        marginVertical: 50
     },
     topView: {
         width: '100%',
@@ -405,7 +411,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        marginTop: 50,
+        // marginTop: 50,
         paddingHorizontal: 15
     },
     pfp: {
@@ -455,7 +461,7 @@ const styles = StyleSheet.create({
         border: 15,
         height: '10%',
         position: 'absolute',
-        top: 335,
+        top: 290,
         display: 'flex',
         justifyContent: 'space-between',
         flexDirection: 'row',
@@ -488,7 +494,7 @@ const styles = StyleSheet.create({
     myPortfolio: {
         display: 'flex',
         height: '15%',
-        width: '80%',
+        width: '85%',
         paddingHorizontal: 10,
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -496,7 +502,8 @@ const styles = StyleSheet.create({
         borderColor: '#fff',
         borderRadius: 20,
         paddingRight: 45,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        marginBottom: 30
     }
 });
 
