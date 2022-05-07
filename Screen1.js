@@ -33,8 +33,12 @@ const Screen1 = () => {
                     <View style={styles.pfp}>
                         <Image source={img} />
                         <View style={{ display: 'flex', marginLeft: 10 }}>
-                            <Text style={{ color: '#fff' }}>Welcome Back</Text>
-                            <Text style={{ color: '#fff' }}>Jeanne</Text>
+                            <Text style={{ color: '#fff', fontFamily: 'Med' }}>
+                                Welcome Back
+                            </Text>
+                            <Text style={{ color: '#fff', fontFamily: 'L' }}>
+                                Jeanne
+                            </Text>
                         </View>
                     </View>
                     <View style={styles.notif}>
@@ -42,8 +46,12 @@ const Screen1 = () => {
                     </View>
                 </View>
                 <View style={styles.topView2}>
-                    <Text style={{ color: '#fff' }}>My Card</Text>
-                    <Text style={{ color: '#fff' }}>Manage {'>'}</Text>
+                    <Text style={{ color: '#fff', fontFamily: 'L' }}>
+                        My Card
+                    </Text>
+                    <Text style={{ color: '#fff', fontFamily: 'Med' }}>
+                        Manage {'>'}
+                    </Text>
                 </View>
                 <View style={styles.card}>
                     <View
@@ -74,19 +82,41 @@ const Screen1 = () => {
                             />
                             <View style={styles.cardTop}>
                                 <Image source={visa} />
-                                <Text style={{ color: '#fff' }}>18/09</Text>
+                                <Text
+                                    style={{ color: '#fff', fontFamily: 'Reg' }}
+                                >
+                                    01/28
+                                </Text>
                             </View>
                             <View style={styles.cardMid}>
-                                <Text style={{ color: '#fff', fontSize: 20 }}>
+                                <Text
+                                    style={{
+                                        color: '#fff',
+                                        fontSize: 20,
+                                        fontFamily: 'L'
+                                    }}
+                                >
                                     Balance
                                 </Text>
 
-                                <Text style={{ color: '#fff', fontSize: 40 }}>
+                                <Text
+                                    style={{
+                                        color: '#fff',
+                                        fontSize: 40,
+                                        fontFamily: 'L'
+                                    }}
+                                >
                                     ₹1,432.00
                                 </Text>
                             </View>
                             <View style={styles.cardBottom}>
-                                <Text style={{ color: '#fff', fontSize: 20 }}>
+                                <Text
+                                    style={{
+                                        color: '#fff',
+                                        fontSize: 20,
+                                        fontFamily: 'L'
+                                    }}
+                                >
                                     **** **** **** 5432
                                 </Text>
                             </View>
@@ -142,12 +172,15 @@ const Screen1 = () => {
                             marginLeft: 30
                         }}
                     >
-                        <Text style={{ color: '#fff' }}>Eligible Limit:</Text>
+                        <Text style={{ color: '#fff', fontFamily: 'Med' }}>
+                            Eligible Limit:
+                        </Text>
                         <Text
                             style={{
                                 color: '#fff',
-                                fontSize: 20,
-                                marginLeft: 5
+                                fontSize: 18,
+                                marginLeft: 5,
+                                fontFamily: 'L'
                             }}
                         >
                             ₹2,800.72
@@ -168,14 +201,21 @@ const Screen1 = () => {
                                 width: '50%'
                             }}
                         ></Image>
-                        <Text style={{ color: '#fff', fontSize: 10 }}>
+                        <Text
+                            style={{
+                                color: '#fff',
+                                fontSize: 10,
+                                fontFamily: 'Sb'
+                            }}
+                        >
                             Deposit Crypto
                         </Text>
                         <Text
                             style={{
                                 color: '#fff',
                                 textAlign: 'center',
-                                fontSize: 10
+                                fontSize: 10,
+                                fontFamily: 'L'
                             }}
                         >
                             To add limit
@@ -188,14 +228,21 @@ const Screen1 = () => {
                                 width: '50%'
                             }}
                         ></Image>
-                        <Text style={{ color: '#fff', fontSize: 10 }}>
+                        <Text
+                            style={{
+                                color: '#fff',
+                                fontSize: 10,
+                                fontFamily: 'Sb'
+                            }}
+                        >
                             Use Xcoins
                         </Text>
                         <Text
                             style={{
                                 color: '#fff',
                                 textAlign: 'center',
-                                fontSize: 10
+                                fontSize: 10,
+                                fontFamily: 'L'
                             }}
                         >
                             for cashback of Rs. 1000
@@ -208,14 +255,21 @@ const Screen1 = () => {
                                 width: '50%'
                             }}
                         ></Image>
-                        <Text style={{ color: '#fff', fontSize: 10 }}>
+                        <Text
+                            style={{
+                                color: '#fff',
+                                fontSize: 10,
+                                fontFamily: 'Sb'
+                            }}
+                        >
                             Pay ypur Due
                         </Text>
                         <Text
                             style={{
                                 color: '#fff',
                                 fontSize: 10,
-                                textAlign: 'center'
+                                textAlign: 'center',
+                                fontFamily: 'L'
                             }}
                         >
                             To release locked crypto
@@ -228,14 +282,21 @@ const Screen1 = () => {
                                 width: '50%'
                             }}
                         ></Image>
-                        <Text style={{ color: '#fff', fontSize: 10 }}>
+                        <Text
+                            style={{
+                                color: '#fff',
+                                fontSize: 10,
+                                fontFamily: 'Sb'
+                            }}
+                        >
                             Withdraw Crypto
                         </Text>
                         <Text
                             style={{
                                 color: '#fff',
                                 textAlign: 'center',
-                                fontSize: 10
+                                fontSize: 10,
+                                fontFamily: 'L'
                             }}
                         >
                             To remove limit
@@ -248,7 +309,8 @@ const Screen1 = () => {
                             color: '#fff',
                             textAlign: 'center',
                             fontSize: 14,
-                            marginBottom: 20
+                            marginBottom: 20,
+                            fontFamily: 'L'
                         }}
                     >
                         Deposit your cryptos to get instant credit limit on the
@@ -261,7 +323,13 @@ const Screen1 = () => {
                             width: '10%'
                         }}
                     ></Image>
-                    <Text style={{ color: '#fff', textAlign: 'center' }}>
+                    <Text
+                        style={{
+                            color: '#fff',
+                            textAlign: 'center',
+                            fontFamily: 'Sb'
+                        }}
+                    >
                         Deposit now
                     </Text>
                 </View>
@@ -273,8 +341,17 @@ const Screen1 = () => {
                             // alignItems: 'center'
                         }}
                     >
-                        <Text style={{ color: '#fff' }}>My Portfolio</Text>
-                        <Text style={{ color: '#fff', fontSize: 30 }}>
+                        <Text style={{ color: '#fff', fontFamily: 'Med' }}>
+                            My Portfolio
+                        </Text>
+                        <Text
+                            style={{
+                                color: '#fff',
+                                fontSize: 30,
+                                fontFamily: 'Reg',
+                                marginVertical: 10
+                            }}
+                        >
                             ₹4,001.46
                         </Text>
                         <View
@@ -286,7 +363,13 @@ const Screen1 = () => {
                             }}
                         >
                             <AntDesign name="caretup" size={22} color="grey" />
-                            <Text style={{ color: '#fff', marginLeft: 5 }}>
+                            <Text
+                                style={{
+                                    color: '#fff',
+                                    marginLeft: 5,
+                                    fontFamily: 'Sb'
+                                }}
+                            >
                                 4.32%
                             </Text>
                         </View>
@@ -298,7 +381,9 @@ const Screen1 = () => {
                             alignItems: 'flex-end'
                         }}
                     >
-                        <Text style={{ color: '#fff' }}>Manage {'>'}</Text>
+                        <Text style={{ color: '#fff', fontFamily: 'Med' }}>
+                            Manage {'>'}
+                        </Text>
                         <View
                             style={{
                                 display: 'flex',
@@ -353,14 +438,29 @@ const Screen1 = () => {
                             }}
                         >
                             <Image source={gift}></Image>
-                            <Text style={{ color: '#fff', marginLeft: 5 }}>
+                            <Text
+                                style={{
+                                    color: '#fff',
+                                    marginLeft: 5,
+                                    fontFamily: 'Reg'
+                                }}
+                            >
                                 My Rewards
                             </Text>
                         </View>
-                        <Text style={{ color: '#fff', fontSize: 30 }}>
+                        <Text
+                            style={{
+                                color: '#fff',
+                                fontSize: 30,
+                                fontFamily: 'Reg'
+                            }}
+                        >
                             0,016xCoin
                         </Text>
-                        <Text style={{ color: '#fff' }}> ₹210.06</Text>
+                        <Text style={{ color: '#fff', fontFamily: 'Reg' }}>
+                            {' '}
+                            ₹210.06
+                        </Text>
                     </View>
                     <View
                         style={{
@@ -369,24 +469,20 @@ const Screen1 = () => {
                             alignItems: 'flex-end'
                         }}
                     >
-                        <Text style={{ color: '#fff' }}>All {'>'}</Text>
-                        <View
-                            style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                width: '100%',
-                                borderWidth: 1,
-                                borderColor: '#fff',
-                                borderRadius: 20,
-                                paddingHorizontal: 10,
-                                marginTop: 10
-                            }}
-                        >
-                            <Text style={{ color: '#fff', fontSize: 30 }}>
+                        <Text style={{ color: '#fff', fontFamily: 'Med' }}>
+                            All {'>'}
+                        </Text>
+                        <View style={styles.bottomPill}>
+                            <Text
+                                style={{
+                                    color: '#fff',
+                                    fontSize: 30,
+                                    fontFamily: 'B'
+                                }}
+                            >
                                 5%
                             </Text>
-                            <Text style={{ color: '#fff' }}>
+                            <Text style={{ color: '#fff', fontFamily: 'Med' }}>
                                 Transaction{'\n'} Cashback
                             </Text>
                         </View>
@@ -406,7 +502,7 @@ const styles = StyleSheet.create({
         // width: '100%',
         // height: '100%',
         backgroundColor: '#000000',
-        marginVertical: 50
+        marginTop: 50
     },
     topView: {
         width: '100%',
@@ -464,7 +560,7 @@ const styles = StyleSheet.create({
         border: 15,
         height: '10%',
         position: 'absolute',
-        top: 290,
+        top: 275,
         display: 'flex',
         justifyContent: 'space-between',
         flexDirection: 'row',
@@ -508,6 +604,17 @@ const styles = StyleSheet.create({
         paddingRight: 45,
         alignSelf: 'center',
         marginBottom: 30
+    },
+    bottomPill: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+        borderWidth: 1,
+        borderColor: '#fff',
+        borderRadius: 20,
+        padding: 10,
+        marginTop: 10
     }
 });
 
