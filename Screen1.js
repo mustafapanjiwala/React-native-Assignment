@@ -603,7 +603,8 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         paddingRight: 45,
         alignSelf: 'center',
-        marginBottom: 30
+        marginBottom: 30,
+        elevation: 5
     },
     bottomPill: {
         display: 'flex',
