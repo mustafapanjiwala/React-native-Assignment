@@ -1,33 +1,37 @@
 {
-  "expo": {
-    "name": "Xquantum_assigment",
-    "slug": "Xquantum_assigment",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "expo": {
+        "name": "React-native-assigment",
+        "slug": "react-native-assignment",
+        "owner": "mustafa-organization",
+        "privacy": "public",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "react-native-assignment-ios"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#FFFFFF"
+            },
+            "package": "com.mustafa_panjiwala.reactnativeassignment"
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "description": "",
+        "githubUrl": "https://github.com/mustafapanjiwala/React-native-Assignment"
     }
-  }
 }
